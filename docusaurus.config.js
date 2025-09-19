@@ -61,7 +61,6 @@ const config = {
               src: "img/logo.png",
           },
           items: [
-              { to: '/glossary', label: 'Glossary', position: 'left' },
               {
                   type: "doc",
                   docId: "intro",
