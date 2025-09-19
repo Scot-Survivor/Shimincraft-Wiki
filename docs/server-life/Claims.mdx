@@ -1,0 +1,61 @@
+---
+id: claims
+title: Claims
+description: Learn how to manage land claims on Shimincraft, including creating, resizing, and deleting claims.
+hide_table_of_contents: false
+tags: [claims,lands,protection,help,first-time]
+---
+# Land Claims on Shimincraft
+In Shimincraft, land claims (Ujis) are essential for protecting your builds and resources from other players. This guide will walk you through the basics of managing your land claims using the `/lands` command.
+A different and more thorough guide can be found on the [official Lands plugin documentation](https://wiki.incredibleplugins.com/lands/players/basics/start). But this guide will cover the basics.
+
+## Key Things to Remember
+As of right now you can claim a maximum of **20 chunks** across __all worlds__.
+- Uji/Land
+    - "Uji" is the name given to your claims, think of this like an [Uji](/glossary#uji-氏).
+    - You can either have your own uji, **or** be a member of someone else's uji.
+- Claiming Limits
+    - Overworld: Y=30 to Y=320
+    - Nether: Y=128 to Y=255 (roof to build height)
+    - End: **not allowed for now**
+- Earning Chunks
+    - **Own Chunks**: 1 chunk (16x16 blocks) every 30 minutes of playtime, up to a maximum of 20 chunks.
+    - [**Support Chunks**](/docs/server-life/claims##support-chunks): 1 chunk (16x16 blocks) every 30 minutes of playtime, up to a maximum of 50 chunks.
+
+
+
+## Generic Intro
+To get started with Uji claims, use the `/lands` command. This will open a menu with various options for managing your uji claims.
+By Executing `/lands claim` it will claim an initial chunk for you, this will be your "home" chunk, and you can expand from there.
+**Chunks do not need to be adjacent to each other.** If you're instead a member of an Uji, you can claim chunks for that Uji instead.
+
+**Choose a name for your Uji**: `/lands create <name>`, if you do not choose one it'll default to your display name.
+
+## Claiming Chunks
+To claim a chunk, simply stand in the chunk you want to claim and use the `/lands claim` command. This will claim the chunk for your Uji, provided you have enough available chunks to claim it.
+
+You can also use `/lands claim [radius, auto, fill]` to change how to claim.
+- `radius <number>`: Claims a square area with the specified radius around you. For example, `/lands claim radius 2` will claim a 5x5 area (2 chunks in each direction from your current chunk).
+- `auto`: Will claim chunks you walk into, until you run out of available chunks to claim.
+- `fill`: Will claim all chunks that are surrounded by claimed chunks.
+
+You can view currently claimed chunks with `/lands claimlist`.
+
+## Claiming larger areas
+You can use `/lands selection` to select a larger area to claim. This will allow you to claim multiple chunks at once, up to your maximum limit.
+1. Use `/lands selection` in one corner of the area you want to claim.
+2. Move to the opposite corner of the area you want to claim and use `/lands selection` again.
+3. Use `/lands claim` to claim the selected area.
+
+## Resizing and Deleting Claims
+To resize a claim, use `/lands unclaim` to remove chunks from your claim. This also works with [selection](/docs/server-life/claims#claiming-larger-areas).
+
+## Deleting an Uji
+To delete your Uji and all its claims, use `/lands delete <name>`. **This action is irreversible**
+
+
+# Extra Bits
+Small bites of information that might be useful to know.
+## Support Chunks
+These are chunks that *you* as a player "give" to the Uji (land) you're a member of. As you rank up in the server,
+through playtime, you'll be able to contribute more chunks to your Uji. These chunks can be used by the Uji owner to expand their uji claim.

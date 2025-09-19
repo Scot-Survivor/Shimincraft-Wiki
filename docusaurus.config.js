@@ -1,9 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-
 const organizationName = "Scot-Survivor";
 const projectName = "Shimincraft-Wiki";
 
@@ -56,58 +53,63 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+  themeConfig: {
       navbar: {
-        title: "Shimincraft SMP",
-        logo: {
-          alt: "Shimincraft Logo",
-          src: "img/logo.png",
-        },
-        items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Documentation",
+          title: "Shimincraft SMP",
+          logo: {
+              alt: "Shimincraft Logo",
+              src: "img/logo.png",
           },
-          { to: "/blog", label: "Blog", position: "left" },
-        ],
+          items: [
+              { to: '/glossary', label: 'Glossary', position: 'left' },
+              {
+                  type: "doc",
+                  docId: "intro",
+                  position: "left",
+                  label: "Getting Started",
+              },
+              { to: "/blog", label: "Dev Blog", position: "left" },
+          ],
       },
       footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
+          style: "dark",
+          links: [
               {
-                label: "Documentation",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
+                  title: "Docs",
+                  items: [
+                      {
+                          label: "Glossary",
+                          to: "/glossary",
+                      },
+                      {
+                          label: "Documentation",
+                          to: "/docs/intro",
+                      },
+                  ],
               },
               {
-                label: "GitHub of Wiki",
-                href: `https://github.com/${organizationName}/${projectName}`,
+                  title: "More",
+                  items: [
+                      {
+                          label: "Blog",
+                          to: "/blog",
+                      },
+                      {
+                          label: "GitHub of Wiki",
+                          href: `https://github.com/${organizationName}/${projectName}`,
+                      },
+                  ],
               },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+          ],
+          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
-    }),
+    },
 };
 
 module.exports = config;
