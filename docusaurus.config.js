@@ -68,7 +68,7 @@ const config = {
                   label: "Getting Started",
               },
               { to: "/blog", label: "Shimincraft Blog", position: "left" },
-              { to: "https://github.com/${organizationName}/${projectName}/tree/main/", label: `Last Updated: ${new Date().toISOString().split('T')[0]}`, position: "right" },
+              { to: `https://github.com/${organizationName}/${projectName}/tree/main/`, label: `Last Updated: ${new Date().toISOString().split('T')[0]}`, position: "right" },
           ],
       },
       footer: {},
