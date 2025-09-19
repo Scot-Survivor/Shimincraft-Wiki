@@ -12,7 +12,7 @@ const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
   url: `https://${organizationName}.github.io`,
-  baseUrl: `/${projectName}/`,
+  baseUrl: `/`,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
   favicon: "img/favicon.ico",
