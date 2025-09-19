@@ -12,7 +12,7 @@ const config = {
   baseUrl: `/`,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.png",
   // GitHub Pages adds a trailing slash by default that I don't want
   trailingSlash: false,
 
