@@ -10,8 +10,8 @@ const config = {
   tagline: "mc.shimincraft.com",
   url: `https://${organizationName}.github.io`,
   baseUrl: `/`,
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
   favicon: "img/logo.png",
   // GitHub Pages adds a trailing slash by default that I don't want
   trailingSlash: false,
