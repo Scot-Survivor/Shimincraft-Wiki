@@ -60,24 +60,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "Shimincraft SMP",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "Shimincraft Logo",
+          src: "img/logo.png",
         },
         items: [
           {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Documentation",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: `https://github.com/${organizationName}/${projectName}`,
-            label: "GitHub",
-            position: "right",
-          },
         ],
       },
       footer: {
@@ -87,25 +82,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Documentation",
                 to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
               },
             ],
           },
@@ -117,7 +95,7 @@ const config = {
                 to: "/blog",
               },
               {
-                label: "GitHub",
+                label: "GitHub of Wiki",
                 href: `https://github.com/${organizationName}/${projectName}`,
               },
             ],
