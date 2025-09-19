@@ -9,8 +9,8 @@ const projectName = "Shimincraft-Wiki";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Shimincraft Wiki",
+  tagline: "mc.shimincraft.com",
   url: `https://${organizationName}.github.io`,
   baseUrl: `/`,
   onBrokenLinks: "throw",
