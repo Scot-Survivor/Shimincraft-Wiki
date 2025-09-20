@@ -1,0 +1,18 @@
+name: blog_alert.yml
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - blog/**.md*
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    steps:
+    -  name: Discord Webhook Alert
+       uses: tsickert/discord-webhook@v7.0.0
+       with:
+         webhook-url: ${{ secrets.WEBHOOK_URL }}
+         content: |
+           A new blog is available at [Shimincraft Blog](https://wiki.shimincraft.com/blog) go view it now!
+           || <@1418934986186162267> ||
