@@ -15,4 +15,4 @@ jobs:
          webhook-url: ${{ secrets.WEBHOOK_URL }}
          content: |
            A new blog is available at [Shimincraft Blog](https://wiki.shimincraft.com/blog) go view it now!
-           || <@1418934986186162267> ||
+           || <@&1418934986186162267> ||
