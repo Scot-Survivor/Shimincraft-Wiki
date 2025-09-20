@@ -54,6 +54,10 @@ const config = {
   ],
 
   themeConfig: {
+      metadata: [
+          {name: 'keywords', content: 'minecraft, blog, wiki, shimincraft, minecraft server'},
+          {name: 'twitter:cards', content: 'summary'},
+      ],
       navbar: {
           title: "Shimincraft SMP",
           logo: {
