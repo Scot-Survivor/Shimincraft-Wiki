@@ -54,6 +54,10 @@ const config = {
   ],
 
   themeConfig: {
+      imageZoom: {
+          // CSS selector to apply the plugin to, defaults to '.markdown img'
+          selector: '.markdown img',
+      },
       metadata: [
           {name: 'keywords', content: 'minecraft, blog, wiki, shimincraft, minecraft server'},
           {name: 'twitter:cards', content: 'summary'},
@@ -83,6 +87,10 @@ const config = {
         respectPrefersColorScheme: true,
       },
     },
+
+    plugins: [
+        'plugin-image-zoom'
+    ],
 };
 
 module.exports = config;
