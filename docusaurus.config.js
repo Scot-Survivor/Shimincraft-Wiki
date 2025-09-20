@@ -54,7 +54,7 @@ const config = {
   ],
 
   themeConfig: {
-      structuredData: {
+      /** structuredData: {
           excludedRoutes: [], // array of routes to exclude from structured data generation, include custom redirects here
           verbose: false, // print verbose output to console (default: false)
           featuredImageDimensions: {
@@ -76,7 +76,7 @@ const config = {
               inLanguage: 'en-GB', // default: en-US
           },
           breadcrumbLabelMap: {} // used to map the breadcrumb labels to a custom value
-      },
+      }, **/
       imageZoom: {
           // CSS selector to apply the plugin to, defaults to '.markdown img'
           selector: '.markdown img',
@@ -113,7 +113,6 @@ const config = {
 
     plugins: [
         'plugin-image-zoom',
-        '@stackql/docusaurus-plugin-structured-data'
     ],
 };
 
