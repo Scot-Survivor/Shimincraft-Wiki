@@ -54,6 +54,29 @@ const config = {
   ],
 
   themeConfig: {
+      structuredData: {
+          excludedRoutes: [], // array of routes to exclude from structured data generation, include custom redirects here
+          verbose: false, // print verbose output to console (default: false)
+          featuredImageDimensions: {
+              width: 1200,
+              height: 627,
+          },
+          authors:{
+              author_name: {
+                  authorId: '1', // unique id for the author - used as an identifier in structured data
+                  url: 'https://github.com/scot-survivor/', // MUST be the same as the `url` property in the `authors.yml` file in the `blog` directory
+                  imageUrl: 'https://github.com/scot-survivor.png', // gravatar url
+                  sameAs: [] // synonymous entity links, e.g. github, linkedin, twitter, etc.
+              },
+          },
+          organization: {}, // Organization properties can be added to this object
+          website: {}, // WebSite properties can be added to this object
+          webpage: {
+              datePublished: '2025-09-10', // default is the current date
+              inLanguage: 'en-GB', // default: en-US
+          },
+          breadcrumbLabelMap: {} // used to map the breadcrumb labels to a custom value
+      },
       imageZoom: {
           // CSS selector to apply the plugin to, defaults to '.markdown img'
           selector: '.markdown img',
@@ -89,7 +112,8 @@ const config = {
     },
 
     plugins: [
-        'plugin-image-zoom'
+        'plugin-image-zoom',
+        '@stackql/docusaurus-plugin-structured-data'
     ],
 };
 
