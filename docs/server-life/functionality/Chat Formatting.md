@@ -27,3 +27,14 @@ To use chat formatting, you will need to use specific codes before your text. He
 - **Underline**: Use `&n` before your text to underline it. 
 - **Strikethrough**: Use `&m` before your text to strike through it. 
 - **Magic**: Is a special effect, and is accessible with `&k`. 
+
+
+## Bonus Formatting
+As well as all of the above, anyone can use special placeholders to show certain things off:
+
+- `[item]` displays the item you are currently holding in your hand.
+- `[inv]` displays a summary of your current inventory.
+- `[end]` displays a summary of your current armor.
+- `[time]` displays the current in-game time.
+- `[ping]` displays your current ping to the server.
+- `[pos]` displays the world you are currently in.
