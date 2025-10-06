@@ -96,7 +96,7 @@ const config = {
                   type: "doc",
                   docId: "intro",
                   position: "left",
-                  label: "Getting Started",
+                  label: "Wiki",
               },
               { to: "/blog", label: "Shimincraft Blog", position: "left" },
               { to: `https://github.com/${organizationName}/${projectName}/tree/main/`, label: `Last Updated: ${new Date().toISOString().split('T')[0]}`, position: "right" },
